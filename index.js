@@ -2,16 +2,8 @@ function search(event) {
     event.preventDefault();
     let searchInputElement = document.querySelector("#search-input");
     let cityElement = document.querySelector("#current-city");
-    let descriptionElement = document.querySelector("#description");
-    let humidityElement = document.querySelector("#humidity");
-    let WindSpeedElement = document.querySelector("#wind-speed");
-    
     cityElement.innerHTML = searchInputElement.value;
-    cityElement.innerHTML = response.data.city;
-    descriptionElement.innerHTML = response.data.condition.description;
-    humidityElement.innerHTML = `${response.data.temperature.huidity}%`;
-    windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
-    temperatureElement.innerHTML = Math.round(temperature);
+
     
   
     let apiKey = "fbef01f4et1b02o0d25c27210a43ef3f";
